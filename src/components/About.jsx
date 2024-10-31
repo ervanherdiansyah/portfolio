@@ -14,16 +14,16 @@ const About = () => {
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-10">About Me</h2>
         <p className="text-lg mb-8">
-          Hi, I'm Ervan I am a college student at UIN SGD Bandung in Informatics
-          Engineering. I am a highly motivated person and I believe in my quick
-          learning abilities and responsibility at work. I can work individually
-          or work with a team.
+          Hi, I'm Ervan, a graduate of UIN SGD Bandung in Informatics
+          Engineering. I am a highly motivated person and believe in my quick
+          learning abilities and sense of responsibility at work. I can work
+          individually or as part of a team.
         </p>
         <div className="flex flex-col items-center md:flex-col md:space-x-12 lg:flex-row xl:flex-row">
           <img
             src={AboutImage}
             alt=""
-            className="w-72 h-85 rounded object-cover mb-8 md:mb-0"
+            className="w-72 h-85 rounded object-cover mb-8 md:mb-0 hidden md:inline hover:scale-105"
           />
           <div className="flex-1">
             <p className="text-lg mb-8">
@@ -32,11 +32,20 @@ const About = () => {
               in both frontend and backend technologies, I strive to create
               seamless and efficient user experiences.
             </p>
-            <div className="space-y-4">
+            <div>
+              <p className="font-bold text-2xl">Skills</p>
+              <p>
+                All skills are perfected through the process of failure. Embrace
+                loss as a necessary part of improvement.
+              </p>
+            </div>
+            <div className="space-y-4 pt-6">
               <div className="grid grid-cols-2 gap-6 md:flex md:gap-6 lg:flex lg:gap-8 xl:flex xl:gap-10">
-                <div className="flex flex-col items-center justify-center gap-1">
-                  <img src={htmlCSSImage} alt="" className="w-10" />
-                  <label htmlFor="htmlandcss">HTML & CSS</label>
+                <div className="flex flex-col items-center justify-center gap-1 hover:scale-105">
+                  <img src={htmlCSSImage} alt="" className="w-10 " />
+                  <label htmlFor="htmlandcss" className="inline-block">
+                    HTML & CSS
+                  </label>
                   {/* <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
@@ -44,9 +53,11 @@ const About = () => {
                   ></div>
                 </div> */}
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1">
+                <div className="flex flex-col items-center justify-center gap-1 hover:scale-105">
                   <img src={php} alt="" className="w-10" />
-                  <label htmlFor="htmlandcss">PHP</label>
+                  <label htmlFor="htmlandcss" className="inline-block">
+                    PHP
+                  </label>
                   {/* <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
@@ -54,9 +65,11 @@ const About = () => {
                   ></div>
                 </div> */}
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1">
+                <div className="flex flex-col items-center justify-center gap-1 hover:scale-105">
                   <img src={js} alt="" className="w-10" />
-                  <label htmlFor="htmlandcss">JS</label>
+                  <label htmlFor="htmlandcss" className="inline-block">
+                    JS
+                  </label>
                   {/* <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
@@ -64,9 +77,11 @@ const About = () => {
                   ></div>
                 </div> */}
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1">
+                <div className="flex flex-col items-center justify-center gap-1 hover:scale-105">
                   <img src={laravel} alt="" className="w-10" />
-                  <label htmlFor="htmlandcss">Laravel</label>
+                  <label htmlFor="htmlandcss" className="inline-block">
+                    Laravel
+                  </label>
                   {/* <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
@@ -74,9 +89,11 @@ const About = () => {
                   ></div>
                 </div> */}
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1">
+                <div className="flex flex-col items-center justify-center gap-1 hover:scale-105">
                   <img src={nodejs} alt="" className="w-10" />
-                  <label htmlFor="htmlandcss">Node JS</label>
+                  <label htmlFor="htmlandcss" className="inline-block">
+                    Node JS
+                  </label>
                   {/* <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
@@ -84,9 +101,11 @@ const About = () => {
                   ></div>
                 </div> */}
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1">
+                <div className="flex flex-col items-center justify-center gap-1 hover:scale-105">
                   <img src={reactjs} alt="" className="w-10" />
-                  <label htmlFor="htmlandcss">React JS</label>
+                  <label htmlFor="htmlandcss" className="inline-block">
+                    React JS
+                  </label>
                   {/* <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
@@ -94,9 +113,11 @@ const About = () => {
                   ></div>
                 </div> */}
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1">
+                <div className="flex flex-col items-center justify-center gap-1 hover:scale-105">
                   <img src={vuejs} alt="" className="w-10" />
-                  <label htmlFor="htmlandcss">Vue JS</label>
+                  <label htmlFor="htmlandcss" className="inline-block">
+                    Vue JS
+                  </label>
                   {/* <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
