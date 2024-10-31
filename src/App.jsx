@@ -27,7 +27,7 @@ function App() {
       <Routes>
         {/* Rute untuk halaman utama */}
         <Route
-          path="/"
+          path="/portfolio"
           element={
             <>
               <Hero />
